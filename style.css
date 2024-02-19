@@ -173,10 +173,61 @@ ul, li{
     background-color: white;
     border-radius: 15px;
     height: 180px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 15px;
+    padding-top: 20px;
+    box-shadow: -5px 0 0 #4338ca;
 }
 
 .bar-card{
     background-color: white;
     border-radius: 15px;
     height: 280px;
+}
+
+.card-icons{
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+}
+
+.announcement-card{
+    background-color: white;
+    border-radius: 15px;
+    height: 280px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
+}
+
+.announcement-card > div{
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+}
+
+.card-bord{
+    border-top: 1px solid #73797e;
+    border-bottom: 1px solid #73797e;
+}
+
+.trending-card{
+    background-color: white;
+    border-radius: 15px;
+    height: 280px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.trending-pfp{
+    width: 55px;
+    height: 55px;
+    border-radius: 55%;
+    margin-right: 10px;
+}
+
+.card-line{
+    display: flex;
+    align-items: center;
 }
